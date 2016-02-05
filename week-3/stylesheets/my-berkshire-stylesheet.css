@@ -1,0 +1,100 @@
+html {
+  background-color: #fff;
+  color: #000080;
+}
+
+a {
+  color: #800080;
+}
+
+a:visited {
+  color: #f00;
+}
+
+h1 {
+  text-decoration: bold;
+  font-size: 16px;
+  text-align: center;
+  border-bottom: 1px solid black;
+  padding: 8px;
+}
+
+.capital {
+  font-size: 28px;
+}
+
+.linebreak {
+  display: block;
+}
+
+img {
+  display: block;
+  width:382px;
+  height:200px;
+  margin: auto;
+}
+
+table {
+  margin: auto;
+}
+
+td {
+  font-size: 14px;
+  padding: 8px;
+  width: 50%;
+}
+
+td .linebreak {
+  font-size: 8px;
+}
+
+.center {
+	text-align: center;
+}
+
+#geicoad {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+#geicoad img {
+	height: 15px;
+	width: 75px;
+}
+
+#geicotext {
+  font-size: 10px;
+  text-align: center;
+  font-weight: normal;
+}
+
+#email {
+  font-size: 10px;
+  border-bottom: 1px solid black;
+  padding-bottom: 10px;
+}
+
+#copyright {
+  font-size: 8px;
+}
+
+p span {
+  font-weight: bold;
+}
+
+/*
+What is important to know when linking an external file (like a stylesheet) to an HTML file?
+-The syntax (type, rel, href) and the path/name of the stylesheet within the "href=" part of the link.
+
+What tricks did you use to help you with positioning? How hard was it to get the site as you wanted it?
+-We used tables with html, then we used padding, font-size, text-align, height, and width commands. It was VERY difficult, we kept trying to use margin and realized that didn't work unless it was a display: block image;. Also making columns with CSS isn't making 1005 sense to me because tried column-count but that didn't work.
+
+What CSS did you use to modify the element style (like size, color, etc.)
+-font-size, backgroun-color, color, font-weight, text-decoration. I'm confused on the difference between font-weight and text-decoration.
+
+Did you modify the HTML to include classes or ids? If so, which did you choose and why? If you didn't, how would you know which one to add to your HTML?
+-Yes we did. We used both. We used ids when we knew the CSS was only going to be for that html element one time only. We thenused class when we knew we wanted to come back to that element later in the html.
+
+When you compared your site to the actual code base, which do you think had cleaner code that followed best practices and why?
+-I believe we had the cleaner code because it looked like they didn't even use CSS. They had all their style within the html and that led to things being clunky and over-typed. Using CSS made it much easier to follow best practices.
+*/
