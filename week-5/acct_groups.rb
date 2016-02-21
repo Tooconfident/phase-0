@@ -12,11 +12,13 @@ cohort = ['Adam Pinsky', 'Afaan Naqvi', 'Alana Farkas', 'Andrew Crowley', 'Andre
 def acct_groups(names)
 	groups = Array.new
  	groups = names.each_slice(5).to_a
- 	if names.size % 5 == 0
- 		
- 	elsif groups[-1].length == 2
+ 	if 
+ 		names.size % 5 == 0
+ 	elsif 
+ 		groups[-1].length == 2
  		groups[-1].push (groups[-2].delete_at(-1)) 
- 	elsif groups[-1].length == 1
+ 	elsif 
+ 		groups[-1].length == 1
  		groups[-1].push (groups[-2].delete_at(-1))
  		groups[-1].push (groups[-2].delete_at(-2))
  	end
@@ -27,13 +29,12 @@ acct_groups(cohort)
 
 #Refactor
 def acct_groups(names)
-	if names.size > 5
+	if names.length > 5
 		groups = []
-		groups = names.shuffle
-		groups.each_slice(5).to_a
+		groups = names.shuffle.each_slice(5).to_a
 		p groups
 	else
-		nil
+		p names
 	end
 end
 
