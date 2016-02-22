@@ -10,7 +10,7 @@
 # Output: a random generated number from 1 to the max number equal to sides on the dice.
 # Steps:
 ## create "Die" class
-## define "intialize" method tha takes 'sides' as an argument
+## define "intialize" method that takes 'sides' as an argument
 ## create new die object that has at least 1 side
 ### return an error if a number less than 1 is entered as the argument
 ## define a "sides" method and give it a variable equal to the sides on the die object
