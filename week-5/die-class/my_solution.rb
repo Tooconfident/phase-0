@@ -2,7 +2,7 @@
 
 # I worked on this challenge by myself.
 
-# I spent [] hours on this challenge.
+# I spent 1.5 hours on this challenge.
 
 # 0. Pseudocode
 
@@ -11,7 +11,7 @@
 # Steps:
 ## create "Die" class
 ## define "intialize" method tha takes 'sides' as an argument
-## create new die object thst has at least 1 side
+## create new die object that has at least 1 side
 ### return an error if a number less than 1 is entered as the argument
 ## define a "sides" method and give it a variable equal to the sides on the die object
 ## define a "roll" method that randomly rolls the die with the set side parameters
