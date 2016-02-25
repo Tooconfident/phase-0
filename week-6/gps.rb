@@ -54,7 +54,7 @@ def serving_size_calc(item_to_make, num_of_ingredients)
   if num_of_ingredients >= serving_size
     print "Calculations complete: Make #{num_of_ingredients / serving_size} of #{item_to_make}." 
   else
-    print "Calculations complete: Make #{num_of_ingredients / serving_size} of #{item_to_make}, you have #{remaining_ingredients} leftover ingredients."
+    print "You don't have enough ingredients."
   end 
 
   case remaining_ingredients
