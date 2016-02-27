@@ -70,7 +70,30 @@ greet.hello
 # Is this code simpler than the last?
 ## Yes, having attr method allows us to replace instance methods with multiple lines of code. 
 ## This example can be even simpler is we replace, att_reader and att_writer with attr_accessor.
+ 
+# Release 5
 
+class Profile
+# first let's finish refactoring this code
+# note that there is a way to add all of the variables like :age on one line, how would we do that?
+  attr_accessor :age, :name, :occupation
+
+  def initialize
+    @age = 27
+    @name = "Kim"
+    @occupation = "Cartographer"
+  end
+
+  def print_info
+    puts
+    puts "age: #{@age}"
+    puts
+    puts "name: #{@name}"
+    puts
+    puts "occupation: #{@occupation}"
+    puts
+  end
+end
 
 # Release 6
 
