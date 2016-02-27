@@ -24,23 +24,23 @@ class GuessingGame
   end
 
 
-	def guess(guess)
-		@guess = guess
-		if guess > @answer
-			return :high
-		elsif guess == @answer
-			return :correct
-		else 
-			return :low
-		end
-	end 
-
-	def solved?
-		if @guess == @answer
-		return true
-		else false
-		end
+  def guess(guess)
+	@guess = guess
+	if guess > @answer
+		return :high
+	elsif guess == @answer
+		return :correct
+	else 
+		return :low
 	end
+  end 
+
+  def solved?
+	if @guess == @answer
+	return true
+	else false
+	end
+  end
 end
 
 game = GuessingGame.new(10)
@@ -58,14 +58,14 @@ class GuessingGame
   end
 
 
-	def guess(guess)
-		@guess = guess.to_i
-		guess > @answer ? :high : guess == @answer ? :correct : :low
-	end 
+  def guess(guess)
+	@guess = guess.to_i
+	guess > @answer ? :high : guess == @answer ? :correct : :low
+  end 
 
-	def solved?
-		@guess == @answer
-	end
+  def solved?
+	@guess == @answer
+  end
 end
 
 game = GuessingGame.new(100)
