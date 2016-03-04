@@ -1,7 +1,7 @@
 # Virus Predictor
 
-# I worked on this challenge with Wesley.
-# We spent [#] hours on this challenge.
+# I worked on this challenge with Wesley El-Amin.
+# We spent 1.25 hours on this challenge.
 
 # EXPLANATION OF require_relative
 # Require_relative is linking a file to the current file. The process is very similar to linking html files to stylesheets.
