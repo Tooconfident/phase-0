@@ -31,6 +31,6 @@
   		 IF the count variable is EVEN
   		 	order the array of numbers from smallest value to largest
   		 	find the TWO middle numbers
-  		 	add the the two middle numbers, divide them by and make this equal to the result variable
+  		 	add the the two middle numbers, divide them by 2 and make this equal to the result variable
   		 	return result variable	
 */
