@@ -18,34 +18,34 @@
 
 # Initial Solution
 
-class GuessingGame
-  def initialize(answer)
-    @answer = answer
-  end
+# class GuessingGame
+#   def initialize(answer)
+#     @answer = answer
+#   end
 
 
-  def guess(guess)
-	@guess = guess
-	if guess > @answer
-		return :high
-	elsif guess == @answer
-		return :correct
-	else 
-		return :low
-	end
-  end 
+#   def guess(guess)
+# 	@guess = guess
+# 	if guess > @answer
+# 		return :high
+# 	elsif guess == @answer
+# 		return :correct
+# 	else 
+# 		return :low
+# 	end
+#   end 
 
-  def solved?
-	if @guess == @answer
-	return true
-	else false
-	end
-  end
-end
+#   def solved?
+# 	if @guess == @answer
+# 	return true
+# 	else false
+# 	end
+#   end
+# end
 
-game = GuessingGame.new(10)
-p game.guess(25)
-p game.solved?
+# game = GuessingGame.new(10)
+# p game.guess(25)
+# p game.solved?
 
 
 
@@ -53,23 +53,32 @@ p game.solved?
 # Refactored Solution
 
 class GuessingGame
+  attr_accessor :choice
+
+
   def initialize(answer)
-    @answer = answer.to_i
+  	@answer = answer
   end
 
 
-  def guess(guess)
-	@guess = guess.to_i
-	guess > @answer ? :high : guess == @answer ? :correct : :low
+  def guess(input)
+  	@choice = input
+	if input > @answer
+		:high 
+	elsif input == @answer 
+		:correct 
+	else
+		:low
+	end
   end 
 
   def solved?
-	@guess == @answer
+	@choice == @answer
   end
 end
 
 game = GuessingGame.new(100)
-p game.guess(100)
+p game.guess(98)
 p game.solved?
 
 
