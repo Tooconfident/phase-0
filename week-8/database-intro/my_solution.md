@@ -43,7 +43,7 @@ This is a relationship between tables where one item in the table can relate to 
 
 What is a primary key? What is a foreign key? How can you determine which is which?
 
-A primary key is the initial column that uniquely identifies every record of the table. The primary key's value is normally a unqiue integer and the primary key is usually named 'id'. A foreign key is used to connect one table to another. Normally the connection is made from one table's primary key to a key in another table containing the same field.
+A primary key is the initial column that uniquely identifies every record of the table. The primary key's value is normally a unqiue integer and the primary key is usually named `id`. A foreign key is used to connect one table to another. Normally the connection is made from one table's primary key to a key in another table containing the same field.
 
 How can you select information out of a SQL database? What are some general guidelines for that?
 
